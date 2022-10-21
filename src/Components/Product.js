@@ -93,8 +93,6 @@ function Product({ userData }) {
     setActiveStep(step);
   };
 
-  const addtoCart = (ind) => {};
-
   return (
     <Grid>
       <Grid item xs={12} sm={12} md={12} sx={{ width: "100%", flexGrow: 1 }}>
