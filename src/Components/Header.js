@@ -127,10 +127,10 @@ function Header({ userData, setuserData }) {
               <TableHead>
                 <TableRow>
                   <TableCell>Image</TableCell>
-                  <TableCell align="right">Title</TableCell>
-                  <TableCell align="right">Price</TableCell>
-                  <TableCell align="right">Quantity</TableCell>
-                  <TableCell align="right">Total</TableCell>
+                  <TableCell align="center">Title</TableCell>
+                  <TableCell align="center">Price</TableCell>
+                  <TableCell align="center">Quantity</TableCell>
+                  <TableCell align="center">Total</TableCell>
                 </TableRow>
               </TableHead>
               <TableBody>
@@ -144,9 +144,9 @@ function Header({ userData, setuserData }) {
                         height="150px"
                       />
                     </TableCell>
-                    <TableCell align="right">{item.title}</TableCell>
-                    <TableCell align="right">${item.price}</TableCell>
-                    <TableCell align="right">
+                    <TableCell align="center">{item.title}</TableCell>
+                    <TableCell align="center">${item.price}</TableCell>
+                    <TableCell align="center">
                       <Stack direction="row" spacing={1}>
                         <Button
                           onClick={() =>
@@ -176,7 +176,7 @@ function Header({ userData, setuserData }) {
                         </Button>
                       </Stack>
                     </TableCell>
-                    <TableCell align="right">{item.itemTotal}</TableCell>
+                    <TableCell align="center">{item.itemTotal}</TableCell>
                   </TableRow>
                 ))}
               </TableBody>
