@@ -145,7 +145,7 @@ function Header({ userData, setuserData }) {
                       />
                     </TableCell>
                     <TableCell align="right">{item.title}</TableCell>
-                    <TableCell align="right">{item.price}</TableCell>
+                    <TableCell align="right">${item.price}</TableCell>
                     <TableCell align="right">
                       <Stack direction="row" spacing={1}>
                         <Button
@@ -188,7 +188,7 @@ function Header({ userData, setuserData }) {
             textAlign="right"
             marginTop={2}
           >
-            SubTotal: {cartTotal}
+            SubTotal: $ {cartTotal}
           </Typography>
         </Box>
       </Modal>
