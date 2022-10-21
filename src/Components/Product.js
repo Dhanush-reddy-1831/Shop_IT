@@ -69,7 +69,7 @@ function Product({ userData }) {
       console.log(res);
       let alldata = res.data;
       setData(alldata);
-    } catch (err) {                                                                                                                                               
+    } catch (err) {
       console.log(err);
     }
   };
@@ -316,6 +316,9 @@ function Product({ userData }) {
                     color: "white",
                   }}
                   variant="contained"
+                  onClick={() => {
+                    addItem(val);
+                  }}
                 >
                   Add To Cart
                 </Button>
