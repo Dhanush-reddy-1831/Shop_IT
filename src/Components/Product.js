@@ -178,7 +178,9 @@ function Product({ userData }) {
           {Data.filter((val) => {
             if (userData === "") {
               return val;
-            } else if (val.title.toLowerCase().includes(userData)) {
+            } else if (
+              val.title.toLowerCase().includes(userData.toLowerCase())
+            ) {
               return val;
             }
           }).map((val, ind) => {
