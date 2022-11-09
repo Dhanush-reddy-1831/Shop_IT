@@ -1,3 +1,4 @@
+/* eslint-disable array-callback-return */
 import React, { useEffect } from "react";
 import axios from "axios";
 import { useTheme } from "@mui/material/styles";
@@ -175,6 +176,7 @@ function Product({ userData }) {
       <Container maxWidth="1">
         {/* sx={{ border: "1px solid black" }} */}
         <Grid container spacing={3}>
+          {/* // eslint-disable-next-line array-callback-return */}
           {Data.filter((val) => {
             if (userData === "") {
               return val;
